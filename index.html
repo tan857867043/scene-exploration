@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫游古画</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>角色创建</h1>
+        
+        <div class="creation-panel" id="creationPanel">
+            <div class="character-preview">
+                <h2>角色外观</h2>
+                <img id="characterImage" class="character-image" src="https://gd-hbimg.huaban.com/c725ab2c6cd023da9837de6ee5a18a3a1c10af4cc705-pD5jQF_fw240webp" alt="道友法相">
+                <div id="characterInfo" class="character-info"></div>
+            </div>
+            
+            <div class="character-form">
+                <form id="characterForm">
+                    <div class="form-group">
+                        <label for="name">角色名字:</label>
+                        <input type="text" id="name" name="name" placeholder="请输入名字" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">角色性别:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">请选择</option>
+                            <option value="male">男性</option>
+                            <option value="female">女性</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="class">角色职业:</label>
+                        <select id="class" name="class" required>
+                            <option value="">请选择</option>
+                            <option value="书生">书生</option>
+                            <option value="mage">商人</option>
+                            <option value="archer">农户</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appearance">角色外观:</label>
+                        <select id="appearance" name="appearance" required>
+                            <option value="">请先选择性别</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit">开启漫游</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="game-view" id="gameView">
+        <div class="game-character">
+            <img id="gameCharacterImage" src="" alt="角色">
+        </div>
+        <div class="middle-section">
+            <div id="interactionButtonContainer">
+                <button id="interactButton">互动</button>
+            </div>
+        </div>
+        <div class="controls-section">
+            <div class="controls" id="controls">
+                <div class="joystick" id="joystick"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
